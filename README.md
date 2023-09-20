@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
 **prometheus.yml**  
 ```
-  - job_name: 'Spacemesh Public'  
+  - job_name: 'Spacemesh Public API'  
     static_configs:  
       - targets: ["10.0.2.100:45000","10.0.2.101:45000","10.0.2.102:45000","10.0.2.103:45000","10.0.2.104:45000","10.0.2.105:45000","10.0.2.106:45000","10.0.2.107:45000"]  
 ```
@@ -206,5 +206,5 @@ Use public/private nodes. I recommend 3 public and the rest private.
 Once you have setup your 3 public nodes, you can generate multiple p2p.key in advance for your future private nodes and pre-enter them in your config.  
 Keep a container with the node service disabled and no p2p.key file for cloning when your next plot is ready.  
 You can completely disconnect your private nodes from the internet and your local network if all your containers are within a private lan.  
-When creating a dashboard, I use ID 10347 for proxmox stats, and add spacemesh metrics with `spacemesh_connected_peers` `spacemesh_verified_layer` and `spacemesh_is_synced` which are made available by spacemesh-metrics.  
+When creating a dashboard, I use ID 10347 for proxmox stats, and add spacemesh metrics with `spacemesh_connected_peers` `spacemesh_verified_layer` and `spacemesh_is_synced`.  
 Use startup delays and order your containers to not start all at the same time and wreck the NVMes.  
