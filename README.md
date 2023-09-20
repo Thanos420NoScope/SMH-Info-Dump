@@ -123,6 +123,13 @@ if __name__ == '__main__':
     fetch_spacemesh_metrics(30000)  
 ```
 
+**prometheus.yml**  
+```
+  - job_name: 'Spacemesh Public'  
+    static_configs:  
+      - targets: ["10.0.2.100:45000","10.0.2.101:45000","10.0.2.102:45000","10.0.2.103:45000","10.0.2.104:45000","10.0.2.105:45000","10.0.2.106:45000","10.0.2.107:45000"]  
+```
+
 ## Update  
 Using the Apache server, we download the update once and trigger it on all nodes.  
 
