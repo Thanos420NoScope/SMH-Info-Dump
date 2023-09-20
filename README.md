@@ -11,6 +11,7 @@ AMD EPYC 7742
 SuperMicro H11SSL-i  
 512GB 3200Mhz RAM  
 2x SAS9300-16I  
+36 Enterprise 16TB HDDs  
 4x 1TB NVMe (Probably 8 or 12 once more nodes are running)  
 PCIe 16x to quad-NVMe (Probably more like above)  
 120GB NVMe boot drive  
